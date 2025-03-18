@@ -5,13 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Completo Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     
-  
     <!-- 1ª Digitação (Aqui) -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Gabriel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-iten"><a href="#" class="nav-link"><i class="bi bi-house"> Home</i></a></li>
+                    <li class="nav-iten"><a href="#" class="nav-link"><i class="bi bi-cart"> Produtos</i></a></li>
+                    <li class="nav-iten"><a href="#" class="nav-link"><i class="bi bi-telephone"> Contato</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Conteúdo principal -->
+    <div class="container mt-4">
+        <!-- alert -->
+        <div class="alert alert-info alert-dismissible fade show">
+            Bem-vindo ao osso site! Confira nossas novidade.
+            <button type="button" class="btn-close" data-bs-dismissible="alert"></button>
+        </div>
+    
 
+        <div class="row">
+            <!-- Coluna principal -->
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Conteúdo principal</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad distinctio suscipit velit beatae animi fuga dolore. In nostrum ipsum facilis vitae laudantium, laborum perspiciatis porro voluptatibus tempora nam ut eligendi.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contatoModal">Entre em contato</button>
+                    </div>
+                </div>
+                <!-- Grid de produtos -->
+                <div class="row">
+                    <div class="col-sm-6 mb-4">
+                        <div class="card">
+                            <img src="https://placehold.co/600x400/000000/FFF" alt="Produto01" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-tittle">Produto 01</h5>
+                                <p class="card-text">Descrição do produto 01</p>
+                                <button class="btn btn-success">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                        <div class="card">
+                            <img src="https://placehold.co/600x400/000000/FFF" alt="Produto01" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-tittle">Produto 02</h5>
+                                <p class="card-text">Descrição do produto 02</p>
+                                <button class="btn btn-success">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <!-- Form de Newsletter -->
+                <div class="card br-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Newsletter</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Inscrever</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Links Rápidos</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
